@@ -35,3 +35,7 @@ body {
         display: none;
     }
 }
+
+.form-group label, p {
+    color: rgb(76, 78, 84);
+}
