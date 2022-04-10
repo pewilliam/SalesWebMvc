@@ -168,6 +168,12 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(131, 81, 204) inset !important;
+}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -3358,9 +3364,9 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #ffffff;
 }
 .btn-link {
-  font-weight: 400;
-  color: #df691a;
-  border-radius: 0;
+    font-weight: 400;
+    color: rgb(131, 81, 204);
+    border-radius: 0;
 }
 .btn-link,
 .btn-link:active,

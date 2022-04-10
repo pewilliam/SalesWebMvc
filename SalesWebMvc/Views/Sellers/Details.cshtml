@@ -20,7 +20,7 @@
             @Html.DisplayNameFor(model => model.Email)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Email)
+            <a href="mailto:@Model.Email" style= "color: rgb(183, 100, 255); ">@Model.Email</a>
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.BirthDate)
@@ -43,6 +43,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="Model.Id" class="btn btn-danger">Edit</a>
+    <a asp-action="Edit" asp-route-id="Model.Id" style="background-color: rgb(131, 81, 204);" class="btn btn-danger">Edit</a>
     <a asp-action="Index" class="btn btn-default">Back to list</a>
 </div>
